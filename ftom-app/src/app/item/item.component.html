@@ -1,0 +1,25 @@
+<h1 style="margin:30px;" >Current Products In Stock</h1>
+<table  class="table">
+  <tr>
+    <th scope="col">Product Image</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Quantity</th>
+  </tr>
+
+  <tr class="item" *ngFor="let it of Item; let i = index">
+    <td>{{it.itemId}}</td>
+    <td>{{it.itemName}}</td>
+    
+    <td>£{{it.itemPrice}}</td>
+    <td>{{it.itemQuantity}}</td>
+  </tr>
+</table>
+
+<br>
+
+<h3>To Purchase Any Of These Products:</h3>
+<button class="available" routerLink="/signup"><h3 class="shadow">Sign up</h3></button>
+<button class="available" routerLink="/login"><h3 class="shadow">Login</h3></button>
+
+<br><br><br><br>
